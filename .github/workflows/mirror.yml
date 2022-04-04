@@ -4,8 +4,8 @@ on:
     branches:
         - __mirror
   schedule:
-    # Run everyday at 3 AM UTC
-    - cron: '* 2/* * * *'
+    # Run at minute 1 past every 2nd hour.
+    - cron: '1 */2 * * *'
   workflow_dispatch:
 
 jobs:
